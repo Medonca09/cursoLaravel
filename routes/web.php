@@ -17,15 +17,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/contato/{id}',function($id = null){
-    return "Contato id = $id";
-});
+Route::get('/contato/{id}',['uses'=>'ContatoController@index']);
 
-Route::post('/contato',function(){
-    dd($_POST);
-    return "Contato POST";
-});
+Route::post('/contato',['uses'=>'ContatoController@criar']);
 
-Route::put('/contato',function(){
-    return "Contato PUT";
-});
+Route::put('/contato',['uses'=>'ContatoController@editar']);
