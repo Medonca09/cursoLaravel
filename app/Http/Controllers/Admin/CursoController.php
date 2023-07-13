@@ -10,6 +10,7 @@ class CursoController extends Controller
 {
    public function index()
    {
+   
     $registros = Curso::all();
     return view('admin.cursos.index', compact('registros'));
    }

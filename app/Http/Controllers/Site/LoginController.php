@@ -4,29 +4,25 @@ namespace App\Http\Controllers\Site;
 
 use Illuminate\Http\Request;
 
-use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
 
 class LoginController extends Controller
 {
 
-    /* protected $redirectTo = '/home'; */
-
     public function index()
     {
-        //dd('teste');
         return view('login.index');
     }
     public function entrar(Request $req)
     {
         $dados = $req->all();
-        //dd(Auth::attempt(['email'=>$dados['email'],'password'=>$dados['senha']]));
+        //necessario usar o intended para redirecionar as rotas com auth
         if(Auth::attempt(['email'=>$dados['email'],'password'=>$dados['senha']])){
-            return redirect()->route('admin.cursos');
+            return redirect()->intended('admin.cursos');
         }  
-
-        return redirect()->route('login.index');
+       
+        return redirect()->route('site.login');
     }
     public function sair()
     {

@@ -6,7 +6,7 @@
 <div class="container">
     <h3 class="center">Entrar</h3>
     <div class="row">
-        <form class="" action="{{ route('site.login.entrar') }}" method="post">
+        <form class="" action="{{route('site.login.entrar')}}" method="post">
             {{ csrf_field() }}
 
             <div class="input-field">
