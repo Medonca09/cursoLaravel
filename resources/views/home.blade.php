@@ -3,6 +3,21 @@
 @section('titulo','Cursos')
 
 @section('conteudo')
+
+<style>
+.card{
+  height: 520px;
+}
+
+.card-image img{
+  height: 150px;
+}
+
+.card-content{
+  height: 290px;
+}
+</style>
+
 <div class="container">
   <h3 class="center">Lista de Cursos</h3>
     <div class="row">
