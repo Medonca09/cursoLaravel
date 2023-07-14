@@ -17,9 +17,9 @@ class LoginController extends Controller
     public function entrar(Request $req)
     {
         $dados = $req->all();
-        //necessario usar o intended para redirecionar as rotas com auth
+        //necessario usar o intended para redirecionar as rotas com auth para URL desejada
         if(Auth::attempt(['email'=>$dados['email'],'password'=>$dados['senha']])){
-            return redirect()->intended('admin.cursos');
+            return redirect()->intended('admin/cursos');
         }  
        
         return redirect()->route('site.login');
