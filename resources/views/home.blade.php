@@ -39,10 +39,11 @@
     @endforeach
   </div>
 
-  <div class="row" style="display: flex; justify-content: center">
+  <ul class="pagination" style="display: flex ; justify-content: center">
+    <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
     {{$cursos->links()}}
-  </div>
-
+    <i class="material-icons">chevron_right</i></a></li>
+  </ul>
 </div>
 
 
