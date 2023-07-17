@@ -16,9 +16,9 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', ['as'=>'site.home','uses'=>'Site\HomeController@index']);
 
-Route::get('/login', ['as'=>'site.login','uses'=>'Site\LoginController@index']);
 Route::get('/login/sair', ['as'=>'site.login.sair','uses'=>'Site\LoginController@sair']);
 Route::post('/login/entrar', ['as'=>'site.login.entrar','uses'=>'Site\LoginController@entrar']);
+Route::get('/login', ['as'=>'site.login','uses'=>'Site\LoginController@index']);
 
 Route::get('/contato/{id?}',['uses'=>'ContatoController@index']);
 
@@ -39,8 +39,7 @@ Route::group(['middleware'=>'auth'], function(){
 
 });
 
-/* Auth::routes(); */
 
+/* Auth::routes();
 
-
-/* Route::get('/home', 'HomeController@index'); */
+Route::get('/home', 'HomeController@index'); */
