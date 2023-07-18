@@ -16,6 +16,50 @@
 .card-content{
   height: 290px;
 }
+
+.page ul{
+  display: flex;
+  align-items: center
+}
+
+.page li.active{
+    background-color: #f39a7f;
+    display: flex;
+    align-content: center;
+    padding: 0 10px;
+    flex-wrap: wrap;
+    margin-right: 10px;
+}
+
+.page li {
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+}
+
+ #chevron-left{
+  display: flex;
+  align-items: center;
+  margin-right: 0px;
+  font-size: 1.5rem;
+}
+
+#chevron-right{
+  display: flex;
+  align-items: center;
+  margin-left: 0px;
+  font-size: 1.5rem;
+}
+
+.pagination li a {
+    color: #444;
+    display: inline-block;
+    font-size: 1.2rem; 
+    padding: 0px;
+    line-height: 0px;
+}
+
+
 </style>
 
 <div class="container">
@@ -39,10 +83,9 @@
     @endforeach
   </div>
 
-  <ul class="pagination" style="display: flex ; justify-content: center">
-    <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+  <div class="page" style="display: flex; justify-content: center">
     {{$cursos->links()}}
-    <i class="material-icons">chevron_right</i></a></li>
+  </div>  
   </ul>
 </div>
 
