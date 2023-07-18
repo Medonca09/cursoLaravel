@@ -18,7 +18,7 @@
                 <label>Senha</label>
             </div>
         
-            <button class="btn deep-orange">Entrar</button>
+            <button class="btn deep-orange" type="submit">Entrar</button>
         </form>
     </div>
 </div>

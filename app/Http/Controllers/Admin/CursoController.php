@@ -74,7 +74,7 @@ class CursoController extends Controller
 
     Curso::find($id)->update($dados);
 
-    return redirect()->route('admin.cursos');
+    return redirect('admin/cursos');
 
    }
 

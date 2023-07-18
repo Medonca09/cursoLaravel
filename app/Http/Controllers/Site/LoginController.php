@@ -19,7 +19,7 @@ class LoginController extends Controller
         $dados = $req->all();
         //necessario usar o intended para redirecionar as rotas com auth para URL desejada
         if(Auth::attempt(['email'=>$dados['email'],'password'=>$dados['senha']])){
-            return redirect()->intended('/');
+            return redirect()->intended('/admin/cursos');
             exit;
         }  
        
