@@ -16,10 +16,10 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 </head>
-<body>
+<body style="background-color: #262627">
 <header>
 <nav>
-  <div class="nav-wrapper deep-orange">
+  <div class="nav-wrapper  purple darken-3">
   <div class="container">
     <a href="#!" class="brand-logo">Curso de Laravel</a>
     <a href="#" data-activates="mobile" class="button-collapse"><i class="material-icons">menu</i></a>

@@ -7,14 +7,18 @@
 <style>
 .card{
   height: 520px;
+  background: #0f0f0f;
 }
 
 .card-image img{
   height: 150px;
+  
 }
 
 .card-content{
   height: 290px;
+  color: #fff;
+  background: #0f0f0f;
 }
 
 .page ul{
@@ -23,7 +27,8 @@
 }
 
 .page li.active{
-    background-color: #f39a7f;
+    background-color: #581da0;
+    color: #fff;
     display: flex;
     align-content: center;
     padding: 0 10px;
@@ -52,14 +57,16 @@
 }
 
 .pagination li a {
-    color: #444;
+    color: #752dcc;
     display: inline-block;
     font-size: 1.2rem; 
     padding: 0px;
     line-height: 0px;
 }
 
-
+.center{
+  color: #fff !important;
+}
 </style>
 
 <div class="container">
@@ -76,7 +83,7 @@
                 <p>{{$curso->descricao}}</p>
             </div>
             <div class="card-action">
-              <a href="#">Ver mais...</a>
+              <a href="#" style="color: #752dcc">Ver mais...</a>
             </div>
         </div>
     </div>

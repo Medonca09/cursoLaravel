@@ -3,7 +3,7 @@
 @section('titulo','Cursos')
 
 @section('conteudo')
-<div class="conteiner">
+<div class="container">
     <h3 class="center">Adicionar Curso</h3>
     <div class="row">
         <form class="" action="{{ route('admin.cursos.salvar') }}" method="post" enctype="multipart/form-data">

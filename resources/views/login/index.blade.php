@@ -4,7 +4,7 @@
 
 @section('conteudo')
 <div class="container">
-    <h3 class="center">Entrar</h3>
+    <h3 class="center" style="color: #fff">Entrar</h3>
     <div class="row">
         <form class="" action="{{route('site.login.entrar')}}" method="post">
             {{ csrf_field() }}
@@ -18,7 +18,7 @@
                 <label>Senha</label>
             </div>
         
-            <button class="btn deep-orange" type="submit">Entrar</button>
+            <button class="btn purple darken-3" type="submit">Entrar</button>
         </form>
     </div>
 </div>
