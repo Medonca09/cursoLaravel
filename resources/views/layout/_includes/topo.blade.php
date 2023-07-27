@@ -16,12 +16,12 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 </head>
-<body style="background-color: #262627">
+<body style="background-color: #1a191c">
 <header>
 <nav>
   <div class="nav-wrapper  purple darken-3">
   <div class="container">
-    <a href="#!" class="brand-logo">Curso de Laravel</a>
+    <a href="#!" class="brand-logo" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">Tech Mastery</a>
     <a href="#" data-activates="mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     <ul class="right hide-on-med-and-down">
       <li><a href="{{route('site.home')}}">Home</a></li>
